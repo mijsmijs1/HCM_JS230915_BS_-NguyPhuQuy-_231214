@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "ef59e8eb-d581-45a2-96be-74a2d26e4674",
+		"name": "hakathon_BS_postmen_colection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31121199"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"John Doe\",\r\n    \"email\": \"john@example.com\",\r\n    \"age\": 30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:3000/users/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:3000/users/"
+			},
+			"response": []
+		},
+		{
+			"name": "Find only",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:3000/users/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Updated Name\",\r\n    \"email\": \"updated@example.com\",\r\n    \"age\": 35\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:3000/users/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:3000/users/5"
+			},
+			"response": []
+		}
+	]
+}
